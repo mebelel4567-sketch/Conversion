@@ -1,0 +1,54 @@
+Converter_V1.0Public - Instructions
+
+HOW TO USE
+1. Click "Browse..." to select your input file
+2. Select the target format from the "Convert To" dropdown
+3. Click "Convert File" to process
+4. Track progress via the progress bar and output log
+5. The converted file will be saved in the same folder as the original file
+
+SUPPORTED FORMATS
+Input formats can be cross-converted to the following extensions:
+txt  - Plain Text
+csv  - Comma Separated Values
+json - JavaScript Object Notation
+md   - Markdown Document
+html - HyperText Markup Language
+png  - Portable Network Graphics
+jpg  - Joint Photographic Experts Group
+pdf  - Portable Document Format
+bat  - Windows Batch Script
+
+CONVERSION LOGIC EXPLAINED
+Text to Data   : Converts TXT/MD/HTML lines into structured CSV columns or JSON objects.
+Data to Text   : Flattens CSV rows or JSON properties into readable TXT, Markdown tables, or HTML.
+Documents      : Renders text-based files directly into clean paginated PDF documents.
+Images         : Converts PNG to JPG (and vice-versa) or renders plain text onto a canvas image.
+Automation     : Turns plain text commands into functional Windows .bat scripts.
+
+REQUIREMENTS (only if running from the .cs source file)
+If you are running the exe file you do not need any of this
+If you are running the raw C# script you will need:
+
+1. Download and install .NET SDK from:
+   https://dotnet.microsoft.com/download
+   Make sure to select the latest version (net10.0 or higher)
+
+2. Install the required NuGet packages by opening CMD in the project folder and running:
+   dotnet add package Markdig
+   dotnet add package PdfSharp
+   dotnet add package UglyToad.PdfPig
+
+WHAT IS CONVERSION FOR
+File conversion is used to change data formatting, make files compatible with 
+different software, extract text from PDFs, clean up HTML tags, or prepare raw 
+data for analysis. This tool was made to handle all basic format switches locally.
+
+DISCLAIMER
+I am not responsible for any misuse of this software. If you use this tool to 
+convert corrupted files, bypass document restrictions, or process copyrighted 
+material without permission, that is your own decision. This app was made purely 
+to help people with daily, legitimate data formatting tasks. Use it responsibly.
+
+VERSION: 1.0 Public
+MADE BY: Bartek
