@@ -26,8 +26,6 @@ internal static class Program
         Application.Run(new MainForm()); 
     }
 }
-
-// ── 1. THE VISUAL WINDOW (Classic Retro Windows Look) ──────────────────────
 public class MainForm : Form
 {
     private Button btnSelectFile, btnConvert;
@@ -147,8 +145,6 @@ public class MainForm : Form
 }
 
 public enum LogLevel { Info, Success, Warning, Error }
-
-// ── 2. THE CONVERSION LOGIC ────────────────────────────────────────────────
 public static class ConversionEngine
 {
     public static readonly string[] SupportedFormats =
